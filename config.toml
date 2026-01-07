@@ -18,6 +18,6 @@ publishDir = 'docs'
   url = "https://thisismattmiller.com"
 
 [[params.links]]
-  name = "Mr Pickle Sr 2026"
+  name = "Mr Pickle Sr 2026 model files" 
   url = "files/mrpickle_2026.zip"
 
