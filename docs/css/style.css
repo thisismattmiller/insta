@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --text-secondary: #a0a0a0;
+    --button-bg: #1a1a1a;
+    --button-hover: #2a2a2a;
+    --button-border: #333333;
+    --accent-color: #e1306c;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #000000;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.avatar-placeholder {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.avatar-placeholder svg {
+    width: 48px;
+    height: 48px;
+    color: white;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.bio {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-button {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    border-radius: 12px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.link-button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.link-button:active {
+    transform: translateY(0);
+}
+
+.social {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+.social-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 32px 16px;
+    }
+
+    .name {
+        font-size: 1.25rem;
+    }
+
+    .link-button {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+}

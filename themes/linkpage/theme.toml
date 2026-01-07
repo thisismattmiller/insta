@@ -1,0 +1,9 @@
+name = "Linkpage"
+license = "MIT"
+licenselink = ""
+description = "A simple link page theme similar to Linktree"
+homepage = ""
+min_version = "0.41.0"
+
+[author]
+  name = ""

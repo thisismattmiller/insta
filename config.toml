@@ -1,0 +1,26 @@
+baseURL = 'https://insta.thisismattmiller.com/'
+languageCode = 'en-us'
+title = 'Matt Miller'
+theme = 'linkpage'
+publishDir = 'docs'
+
+[params]
+  # Profile settings
+  name = "thisismattmiller"
+  bio = '¯\_( ͡° ͜ʖ ͡°)_/¯'
+  # avatar = "images/avatar.jpg"  # Add your avatar image to static/images/
+
+  # Social links (optional - shown as icons)
+  instagram = "https://instagram.com/thisismattmiller"
+
+[[params.links]]
+  name = "My Website"
+  url = "https://thisismattmiller.com"
+
+[[params.links]]
+  name = "Link 2"
+  url = "https://example.com"
+
+[[params.links]]
+  name = "Link 3"
+  url = "https://example.com"
