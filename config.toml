@@ -17,6 +17,10 @@ publishDir = 'docs'
   name = "My Website"
   url = "https://thisismattmiller.com"
 
+[[params.links]]
+  name = "The Embedded Catalog (The Signal, Library of Congress)"
+  url = "https://blogs.loc.gov/thesignal/2026/10/ai-sandbox-series-embedded-catalog/"
+
 
 [[params.links]]
   name = "Art Work Sonification #1: Yayoi Kusama Baby Stroller 🛒"
